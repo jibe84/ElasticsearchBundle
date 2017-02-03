@@ -1,13 +1,13 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch;
 
 use Elasticsearch\Connections\Connection;
 
 /**
  * Class ConnectionMocker
  *
- * @package M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch
+ * @package M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch
  */
 trait ConnectionMocker
 {

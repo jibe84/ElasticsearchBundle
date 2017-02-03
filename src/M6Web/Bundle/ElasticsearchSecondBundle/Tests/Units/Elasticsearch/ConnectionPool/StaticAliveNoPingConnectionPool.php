@@ -1,18 +1,18 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch\ConnectionPool;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch\ConnectionPool;
 
 use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
 use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
 use Elasticsearch\Connections\Connection;
 use Elasticsearch\Connections\ConnectionFactoryInterface;
-use M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch\ConnectionMocker;
+use M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch\ConnectionMocker;
 use mageekguy\atoum\test;
 
 /**
  * Class StaticAliveNoPingConnectionPool
  *
- * @package M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch\ConnectionPool
+ * @package M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch\ConnectionPool
  */
 class StaticAliveNoPingConnectionPool extends test
 {

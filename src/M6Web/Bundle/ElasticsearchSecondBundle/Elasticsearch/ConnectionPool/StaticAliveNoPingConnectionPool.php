@@ -1,6 +1,6 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Elasticsearch\ConnectionPool;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Elasticsearch\ConnectionPool;
 
 use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
 use Elasticsearch\ConnectionPool\StaticNoPingConnectionPool;
@@ -12,7 +12,7 @@ use Elasticsearch\Connections\Connection;
  * > Extend StaticNoPingConnectionPool and add the ability to remove any failed connection
  *    from the list of eligible connections to be chosen from by the selector.
  *
- * @package M6Web\Bundle\ElasticsearchBundle\Elasticsearch\ConnectionPool
+ * @package M6Web\Bundle\ElasticsearchSecondBundle\Elasticsearch\ConnectionPool
  */
 class StaticAliveNoPingConnectionPool extends StaticNoPingConnectionPool
 {

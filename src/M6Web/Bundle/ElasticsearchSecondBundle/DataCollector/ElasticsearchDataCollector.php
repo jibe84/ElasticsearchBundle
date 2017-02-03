@@ -1,8 +1,8 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\DataCollector;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\DataCollector;
 
-use M6Web\Bundle\ElasticsearchBundle\EventDispatcher\ElasticsearchEvent;
+use M6Web\Bundle\ElasticsearchSecondBundle\EventDispatcher\ElasticsearchEvent;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;

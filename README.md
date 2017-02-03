@@ -1,6 +1,8 @@
-# ElasticsearchBundle [![Build Status](https://travis-ci.org/M6Web/ElasticsearchBundle.png?branch=master)](https://travis-ci.org/M6Web/ElasticsearchBundle)
+# ElasticsearchSecondBundle
 
 Integration of the [Elasticsearch official PHP client](http://github.com/elasticsearch/elasticsearch-php) within a Symfony Project.
+
+Copy of [M6Web/ElasticsearchBundle](https://github.com/M6Web/ElasticsearchBundle).
 
 ## Features
 
@@ -14,7 +16,7 @@ You must first add the bundle to your `composer.json`:
 
 ```json
     "require": {
-        "m6web/elasticsearch-bundle": "dev-master"
+        "jibe84/elasticsearch-second-bundle": "dev-master"
     }
 ```
 
@@ -26,7 +28,7 @@ Then register the bundle in your `AppKernel` class:
     {
         $bundles = array(
             // ...
-            new M6Web\Bundle\ElasticsearchBundle\M6WebElasticsearchBundle(),
+            new M6Web\Bundle\ElasticsearchSecondBundle\M6WebElasticsearchSecondBundle(),
         );
         // ...
     }
@@ -50,12 +52,12 @@ m6web_elasticsearch:
                 - 'other_server:9200'
 ```
 
-From this configuration, the bundle will create two services : 
+From this configuration, the bundle will create two services :
 
 - `m6web_elasticsearch.client.my_client` that will connect to two Elasticsearch instances: `localhost` on port 9200 and `other_host` on port 9201
 - `m6web_elasticsearch.client.my_other_client` that will connect to one Elasticsearch instances: `other_server` on port 9200
 
-It will also create `m6web_elasticsearch.client.default` which is an alias for `m6web_elasticsearch.client.my_client` 
+It will also create `m6web_elasticsearch.client.default` which is an alias for `m6web_elasticsearch.client.my_client`
 
 ### Additional configuration
 
@@ -82,13 +84,13 @@ m6web_elasticsearch:
 
 ### Events
 
-The bundle dispatches `\M6Web\Bundle\ElasticsearchBundle\EventDispatcher\ElasticsearchEvent` events containing various information about the Elasticsearch requests. 
+The bundle dispatches `\M6Web\Bundle\ElasticsearchSecondBundle\EventDispatcher\ElasticsearchEvent` events containing various information about the Elasticsearch requests.
 
-Events are fired with the name `m6web.elasticsearch`. 
+Events are fired with the name `m6web.elasticsearch`.
 
 ## Tests
 
-You can launch the unit tests using: 
+You can launch the unit tests using:
 
 ```
 ./vendor/bin/atoum
@@ -96,4 +98,4 @@ You can launch the unit tests using:
 
 ## License
 
-ElasticsearchBundle is licensed under the [MIT license](LICENSE).
+ElasticsearchSecondBundle is licensed under the [MIT license](LICENSE).

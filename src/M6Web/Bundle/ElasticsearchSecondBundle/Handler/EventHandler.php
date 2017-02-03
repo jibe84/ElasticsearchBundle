@@ -1,9 +1,9 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Handler;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Handler;
 
 use GuzzleHttp\Ring\Core;
-use M6Web\Bundle\ElasticsearchBundle\EventDispatcher\ElasticsearchEvent;
+use M6Web\Bundle\ElasticsearchSecondBundle\EventDispatcher\ElasticsearchEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**

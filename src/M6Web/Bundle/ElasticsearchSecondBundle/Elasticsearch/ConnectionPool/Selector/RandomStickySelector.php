@@ -1,6 +1,6 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Elasticsearch\ConnectionPool\Selector;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Elasticsearch\ConnectionPool\Selector;
 
 use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
 use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
@@ -9,7 +9,7 @@ use Elasticsearch\Connections\ConnectionInterface;
 /**
  * Class RandomStickySelector
  *
- * @package M6Web\Bundle\ElasticsearchBundle\Elasticsearch\ConnectionPool\Selector
+ * @package M6Web\Bundle\ElasticsearchSecondBundle\Elasticsearch\ConnectionPool\Selector
  */
 class RandomStickySelector implements SelectorInterface
 {

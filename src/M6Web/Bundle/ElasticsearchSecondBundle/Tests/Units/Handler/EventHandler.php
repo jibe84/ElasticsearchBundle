@@ -1,11 +1,11 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Tests\Units\Handler;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Handler;
 
 use GuzzleHttp\Ring\Future\CompletedFutureArray;
 use GuzzleHttp\Ring\Future\FutureArray;
-use M6Web\Bundle\ElasticsearchBundle\EventDispatcher\ElasticsearchEvent;
-use M6Web\Bundle\ElasticsearchBundle\Handler\EventHandler as TestedClass;
+use M6Web\Bundle\ElasticsearchSecondBundle\EventDispatcher\ElasticsearchEvent;
+use M6Web\Bundle\ElasticsearchSecondBundle\Handler\EventHandler as TestedClass;
 use mageekguy\atoum;
 use React\Promise\RejectedPromise;
 

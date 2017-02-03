@@ -1,3 +1,3 @@
 <?php
 
-$runner->addTestsFromDirectory(__DIR__.'/src/M6Web/Bundle/ElasticsearchBundle/Tests');
+$runner->addTestsFromDirectory(__DIR__.'/src/M6Web/Bundle/ElasticsearchSecondBundle/Tests');

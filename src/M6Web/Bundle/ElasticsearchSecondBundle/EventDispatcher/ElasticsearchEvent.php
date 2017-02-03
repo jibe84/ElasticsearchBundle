@@ -1,7 +1,7 @@
 <?php
 
 
-namespace M6Web\Bundle\ElasticsearchBundle\EventDispatcher;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\EventDispatcher;
 
 
 use Symfony\Component\EventDispatcher\Event;

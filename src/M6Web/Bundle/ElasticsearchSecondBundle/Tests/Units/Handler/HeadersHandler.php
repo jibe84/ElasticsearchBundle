@@ -1,8 +1,8 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Tests\Units\Handler;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Handler;
 
-use M6Web\Bundle\ElasticsearchBundle\Handler\HeadersHandler as TestedClass;
+use M6Web\Bundle\ElasticsearchSecondBundle\Handler\HeadersHandler as TestedClass;
 use mageekguy\atoum;
 
 /**

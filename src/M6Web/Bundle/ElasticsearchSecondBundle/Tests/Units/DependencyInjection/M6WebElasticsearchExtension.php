@@ -1,8 +1,8 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Tests\Units\DependencyInjection;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\DependencyInjection;
 
-use M6Web\Bundle\ElasticsearchBundle\DependencyInjection\M6WebElasticsearchExtension as TestedClass;
+use M6Web\Bundle\ElasticsearchSecondBundle\DependencyInjection\M6WebElasticsearchExtension as TestedClass;
 use mageekguy\atoum\test;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;

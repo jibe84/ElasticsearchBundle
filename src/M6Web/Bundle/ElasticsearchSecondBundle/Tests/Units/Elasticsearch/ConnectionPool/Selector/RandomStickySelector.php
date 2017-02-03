@@ -1,16 +1,16 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch\ConnectionPool\Selector;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch\ConnectionPool\Selector;
 
 use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
 use Elasticsearch\Connections\Connection;
-use M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch\ConnectionMocker;
+use M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch\ConnectionMocker;
 use mageekguy\atoum\test;
 
 /**
  * Class RandomStickySelector
  *
- * @package M6Web\Bundle\ElasticsearchBundle\Tests\Units\Elasticsearch\ConnectionPool\Selector
+ * @package M6Web\Bundle\ElasticsearchSecondBundle\Tests\Units\Elasticsearch\ConnectionPool\Selector
  */
 class RandomStickySelector extends test
 {

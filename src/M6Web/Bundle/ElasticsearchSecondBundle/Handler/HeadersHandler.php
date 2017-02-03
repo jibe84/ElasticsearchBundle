@@ -1,6 +1,6 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\Handler;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\Handler;
 
 use GuzzleHttp\Ring\Future\FutureInterface;
 

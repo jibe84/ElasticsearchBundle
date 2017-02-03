@@ -1,6 +1,6 @@
 <?php
 
-namespace M6Web\Bundle\ElasticsearchBundle\DependencyInjection;
+namespace M6Web\Bundle\ElasticsearchSecondBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -119,7 +119,7 @@ class M6WebElasticsearchExtension extends Extension
         $container->setDefinition($singleHandlerId, $singleHandler);
 
         // Headers handler
-        $headersHandler = (new Definition('M6Web\Bundle\ElasticsearchBundle\Handler\HeadersHandler'))
+        $headersHandler = (new Definition('M6Web\Bundle\ElasticsearchSecondBundle\Handler\HeadersHandler'))
             ->setPublic(false)
             ->setArguments([new Reference($singleHandlerId)]);
         if (isset($config['headers'])) {
@@ -131,7 +131,7 @@ class M6WebElasticsearchExtension extends Extension
         $container->setDefinition($headersHandlerId, $headersHandler);
 
         // Event handler
-        $eventHandler   = (new Definition('M6Web\Bundle\ElasticsearchBundle\Handler\EventHandler'))
+        $eventHandler   = (new Definition('M6Web\Bundle\ElasticsearchSecondBundle\Handler\EventHandler'))
             ->setPublic(false)
             ->setArguments([new Reference('event_dispatcher'), new Reference($headersHandlerId)]);
         $eventHandlerId = $definitionId.'.event_handler';
@@ -163,12 +163,12 @@ class M6WebElasticsearchExtension extends Extension
     protected function createDataCollector(ContainerBuilder $container)
     {
         $collectorDefinition = new Definition(
-            'M6Web\Bundle\ElasticsearchBundle\DataCollector\ElasticsearchDataCollector'
+            'M6Web\Bundle\ElasticsearchSecondBundle\DataCollector\ElasticsearchDataCollector'
         );
         $collectorDefinition->addTag(
             'data_collector',
             [
-                'template' => 'M6WebElasticsearchBundle:Collector:elasticsearch',
+                'template' => 'M6WebElasticsearchSecondBundle:Collector:elasticsearch',
                 'id'       => 'elasticsearch'
             ]
         );

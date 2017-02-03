@@ -1,12 +1,12 @@
 {
-    "name": "m6web/elasticsearch-bundle",
+    "name": "jibe84/elasticsearch-second-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony2 Bundle on top of elasticsearch/elasticsearch-php",
+    "description": "Symfony2 Bundle on top of elasticsearch/elasticsearch-php, copy of m6web/elasticsearch-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Matthieu Guillermin",
-            "email": "matthieu.guillermin@m6.fr"
+            "name": "JB Reynaud",
+            "email": "jbreynaud.externe@m6.fr"
         }
     ],
     "require": {
